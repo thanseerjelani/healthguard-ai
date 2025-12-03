@@ -401,7 +401,7 @@ healthguard-ai/
 
 ### Demo Video
 
-[Link to YouTube demo video - 3 minutes]
+https://youtu.be/-BP_kIYDUuM
 
 **Video Covers:**
 
