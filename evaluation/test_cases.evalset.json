@@ -1,0 +1,150 @@
+{
+  "eval_set_id": "healthguard_ai_test_suite",
+  "description": "Comprehensive test cases for HealthGuard AI multi-agent system",
+  "eval_cases": [
+    {
+      "eval_id": "medication_interaction_check_1",
+      "category": "medication_safety",
+      "conversation": [
+        {
+          "user_content": {
+            "parts": [
+              {
+                "text": "I take Lisinopril for blood pressure. Can I take ibuprofen for my headache?"
+              }
+            ]
+          },
+          "expected_behavior": {
+            "should_check_interaction": true,
+            "should_warn_about_nsaid": true,
+            "should_suggest_alternative": true,
+            "expected_alternative": "acetaminophen"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "I need to check the interaction between Lisinopril and ibuprofen. There is a MODERATE interaction - NSAIDs like ibuprofen may reduce the effectiveness of blood pressure medications. I recommend using acetaminophen (Tylenol) instead for pain relief, as it does not interact with Lisinopril. Please consult your doctor or pharmacist for personalized advice."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "eval_id": "symptom_severity_emergency",
+      "category": "symptom_assessment",
+      "conversation": [
+        {
+          "user_content": {
+            "parts": [
+              {
+                "text": "I'm experiencing severe chest pain and difficulty breathing"
+              }
+            ]
+          },
+          "expected_behavior": {
+            "severity_level": "EMERGENCY",
+            "should_recommend_911": true,
+            "should_not_delay": true
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "⚠️ EMERGENCY - CALL 911 IMMEDIATELY. Chest pain and difficulty breathing are signs of a potential cardiac or respiratory emergency. Do not wait - seek immediate medical attention by calling 911 or going to the emergency room now."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "eval_id": "symptom_moderate_assessment",
+      "category": "symptom_assessment",
+      "conversation": [
+        {
+          "user_content": {
+            "parts": [
+              {
+                "text": "I have a headache and mild fever of 100.5F for 2 days"
+              }
+            ]
+          },
+          "expected_behavior": {
+            "severity_level": "MODERATE",
+            "should_recommend_monitoring": true,
+            "should_suggest_otc": true
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Based on your symptoms, this appears to be MODERATE severity. You can manage these symptoms at home with rest, hydration, and over-the-counter fever reducers like acetaminophen. Monitor your temperature - if fever exceeds 103°F or persists beyond 3-5 days, contact your doctor. Seek immediate care if symptoms worsen significantly."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "eval_id": "health_research_flu",
+      "category": "health_research",
+      "conversation": [
+        {
+          "user_content": {
+            "parts": [
+              {
+                "text": "What are the symptoms of the flu and when should I see a doctor?"
+              }
+            ]
+          },
+          "expected_behavior": {
+            "should_use_google_search": true,
+            "should_list_symptoms": true,
+            "should_specify_warning_signs": true,
+            "should_cite_sources": true
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "The flu typically causes fever, chills, cough, sore throat, muscle aches, fatigue, and headaches. Most people recover within 7-10 days. See a doctor if you experience: high fever above 103°F, difficulty breathing, chest pain, severe dehydration, or if symptoms worsen after initial improvement. Children, elderly, pregnant women, and those with chronic conditions should seek care earlier."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "eval_id": "multi_agent_coordination",
+      "category": "complex_query",
+      "conversation": [
+        {
+          "user_content": {
+            "parts": [
+              {
+                "text": "I have a headache and mild fever. I'm currently taking Metformin and Lisinopril. What pain medication is safe for me?"
+              }
+            ]
+          },
+          "expected_behavior": {
+            "should_assess_symptoms": true,
+            "should_check_medications": true,
+            "should_coordinate_agents": true,
+            "should_provide_integrated_response": true
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Your symptoms appear MODERATE - manageable at home. For pain relief with your current medications (Metformin and Lisinopril), I recommend acetaminophen (Tylenol) instead of ibuprofen. This is because NSAIDs like ibuprofen can reduce the effectiveness of Lisinopril. Acetaminophen is safe with both your medications. Take as directed, stay hydrated, and monitor your fever. Contact your doctor if fever exceeds 103°F or symptoms persist beyond 3-5 days."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "created_date": "2024-12-01",
+    "total_test_cases": 5,
+    "agent_version": "1.0.0",
+    "framework": "Google ADK"
+  }
+}

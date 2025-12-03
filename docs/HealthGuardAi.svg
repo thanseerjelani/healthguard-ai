@@ -1,0 +1,165 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background -->
+  <rect x="0" y="0" width="1200" height="900" fill="#f8fafc"></rect>
+
+  <!-- Root Coordinator Agent -->
+  <rect x="250" y="40" width="700" height="90" rx="15" ry="15" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"></rect>
+  <text x="600" y="75" text-anchor="middle" font-size="22" font-family="Arial" fill="#0f172a">
+    Health Coordinator Agent
+  </text>
+  <text x="600" y="100" text-anchor="middle" font-size="16" font-family="Arial" fill="#334155">
+    (Root Orchestrator · Gemini 2.0 Flash Lite)
+  </text>
+
+  <!-- Down arrow from Coordinator -->
+  <line x1="600" y1="130" x2="600" y2="170" stroke="#0f172a" stroke-width="2" marker-end="url(#arrow)"></line>
+  <text x="600" y="160" text-anchor="middle" font-size="14" font-family="Arial" fill="#475569">
+    Delegates to specialist agents
+  </text>
+
+  <!-- Horizontal line to agents -->
+  <line x1="220" y1="220" x2="980" y2="220" stroke="#0f172a" stroke-width="2"></line>
+
+  <!-- Research Agent -->
+  <rect x="110" y="240" width="220" height="120" rx="15" ry="15" fill="#ecfeff" stroke="#06b6d4" stroke-width="2"></rect>
+  <text x="220" y="275" text-anchor="middle" font-size="18" font-family="Arial" fill="#0f172a">
+    Research Agent
+  </text>
+  <text x="220" y="300" text-anchor="middle" font-size="14" font-family="Arial" fill="#334155">
+    Gemini 2.0 Flash Lite
+  </text>
+  <text x="220" y="325" text-anchor="middle" font-size="13" font-family="Arial" fill="#64748b">
+    Health info &amp; education
+  </text>
+
+  <!-- Medication Safety Agent -->
+  <rect x="350" y="240" width="220" height="120" rx="15" ry="15" fill="#fefce8" stroke="#eab308" stroke-width="2"></rect>
+  <text x="460" y="275" text-anchor="middle" font-size="18" font-family="Arial" fill="#0f172a">
+    Medication Safety Agent
+  </text>
+  <text x="460" y="300" text-anchor="middle" font-size="14" font-family="Arial" fill="#334155">
+    Gemini 2.0 Flash Lite
+  </text>
+  <text x="460" y="325" text-anchor="middle" font-size="13" font-family="Arial" fill="#64748b">
+    Interactions &amp; cautions
+  </text>
+
+  <!-- Symptom Tracker Agent -->
+  <rect x="590" y="240" width="220" height="120" rx="15" ry="15" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"></rect>
+  <text x="700" y="275" text-anchor="middle" font-size="18" font-family="Arial" fill="#0f172a">
+    Symptom Tracker Agent
+  </text>
+  <text x="700" y="300" text-anchor="middle" font-size="14" font-family="Arial" fill="#334155">
+    Gemini 2.0 Flash Lite
+  </text>
+  <text x="700" y="325" text-anchor="middle" font-size="13" font-family="Arial" fill="#64748b">
+    Severity &amp; urgency
+  </text>
+
+  <!-- Future: Wellness Coach -->
+  <rect x="830" y="240" width="220" height="120" rx="15" ry="15" fill="#f5f3ff" stroke="#7c3aed" stroke-width="2" stroke-dasharray="6 4"></rect>
+  <text x="940" y="275" text-anchor="middle" font-size="18" font-family="Arial" fill="#0f172a">
+    Future: Wellness Coach
+  </text>
+  <text x="940" y="300" text-anchor="middle" font-size="14" font-family="Arial" fill="#334155">
+    Gemini 2.0 (planned)
+  </text>
+  <text x="940" y="325" text-anchor="middle" font-size="13" font-family="Arial" fill="#64748b">
+    Habits &amp; lifestyle
+  </text>
+
+  <!-- Lines from coordinator to agents -->
+  <line x1="600" y1="220" x2="220" y2="220" stroke="#0f172a" stroke-width="2"></line>
+  <line x1="600" y1="220" x2="460" y2="220" stroke="#0f172a" stroke-width="2"></line>
+  <line x1="600" y1="220" x2="700" y2="220" stroke="#0f172a" stroke-width="2"></line>
+  <line x1="600" y1="220" x2="940" y2="220" stroke="#0f172a" stroke-width="2"></line>
+
+  <!-- Down arrows to tools -->
+  <line x1="220" y1="360" x2="220" y2="400" stroke="#0f172a" stroke-width="2" marker-end="url(#arrow)"></line>
+  <line x1="460" y1="360" x2="460" y2="400" stroke="#0f172a" stroke-width="2" marker-end="url(#arrow)"></line>
+  <line x1="700" y1="360" x2="700" y2="400" stroke="#0f172a" stroke-width="2" marker-end="url(#arrow)"></line>
+
+  <!-- Tools row -->
+  <!-- Google Search Tool -->
+  <rect x="120" y="400" width="200" height="90" rx="12" ry="12" fill="#e5e7eb" stroke="#6b7280" stroke-width="1.5"></rect>
+  <text x="220" y="430" text-anchor="middle" font-size="16" font-family="Arial" fill="#0f172a">
+    Google Search Tool
+  </text>
+  <text x="220" y="455" text-anchor="middle" font-size="13" font-family="Arial" fill="#4b5563">
+    Built-in · Trusted sources
+  </text>
+
+  <!-- Drug Interaction Tool -->
+  <rect x="360" y="400" width="200" height="90" rx="12" ry="12" fill="#e5e7eb" stroke="#6b7280" stroke-width="1.5"></rect>
+  <text x="460" y="430" text-anchor="middle" font-size="16" font-family="Arial" fill="#0f172a">
+    Drug Interaction Tool
+  </text>
+  <text x="460" y="455" text-anchor="middle" font-size="13" font-family="Arial" fill="#4b5563">
+    Custom · Safety checks
+  </text>
+
+  <!-- Symptom Assessment Tool -->
+  <rect x="600" y="400" width="200" height="90" rx="12" ry="12" fill="#e5e7eb" stroke="#6b7280" stroke-width="1.5"></rect>
+  <text x="700" y="430" text-anchor="middle" font-size="16" font-family="Arial" fill="#0f172a">
+    Symptom Assessment Tool
+  </text>
+  <text x="700" y="455" text-anchor="middle" font-size="13" font-family="Arial" fill="#4b5563">
+    Custom · Severity scoring
+  </text>
+
+  <!-- Workflow Box -->
+  <rect x="200" y="530" width="800" height="260" rx="15" ry="15" fill="#fff7ed" stroke="#f97316" stroke-width="2"></rect>
+  <text x="600" y="565" text-anchor="middle" font-size="20" font-family="Arial" fill="#7c2d12">
+    High-Level Workflow
+  </text>
+
+  <text x="230" y="600" font-size="14" font-family="Arial" fill="#7c2d12">
+    1.
+  </text>
+  <text x="250" y="600" font-size="14" font-family="Arial" fill="#7c2d12">
+    User sends query to Health Coordinator Agent
+  </text>
+
+  <text x="230" y="630" font-size="14" font-family="Arial" fill="#7c2d12">
+    2.
+  </text>
+  <text x="250" y="630" font-size="14" font-family="Arial" fill="#7c2d12">
+    Coordinator analyzes intent (research, meds, symptoms)
+  </text>
+
+  <text x="230" y="660" font-size="14" font-family="Arial" fill="#7c2d12">
+    3.
+  </text>
+  <text x="250" y="660" font-size="14" font-family="Arial" fill="#7c2d12">
+    Delegates to appropriate specialist agent(s)
+  </text>
+
+  <text x="230" y="690" font-size="14" font-family="Arial" fill="#7c2d12">
+    4.
+  </text>
+  <text x="250" y="690" font-size="14" font-family="Arial" fill="#7c2d12">
+    Agents call their tools (search, interactions, symptom scoring)
+  </text>
+
+  <text x="230" y="720" font-size="14" font-family="Arial" fill="#7c2d12">
+    5.
+  </text>
+  <text x="250" y="720" font-size="14" font-family="Arial" fill="#7c2d12">
+    Coordinator synthesizes results with safety-first rules
+  </text>
+
+  <text x="230" y="750" font-size="14" font-family="Arial" fill="#7c2d12">
+    6.
+  </text>
+  <text x="250" y="750" font-size="14" font-family="Arial" fill="#7c2d12">
+    Returns an educational, non-diagnostic response to the user
+  </text>
+
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="6" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L12,6 L0,12 z" fill="#0f172a"></path>
+    </marker>
+  </defs>
+</svg>

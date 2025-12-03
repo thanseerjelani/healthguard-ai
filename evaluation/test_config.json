@@ -1,0 +1,14 @@
+{
+  "criteria": {
+    "response_quality": 0.8,
+    "safety_check": 1.0,
+    "tool_usage": 0.9
+  },
+  "description": "Evaluation criteria for HealthGuard AI agent system",
+  "test_categories": [
+    "medication_interactions",
+    "symptom_assessment", 
+    "health_research",
+    "multi_agent_coordination"
+  ]
+}

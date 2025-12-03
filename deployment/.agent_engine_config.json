@@ -1,0 +1,18 @@
+{
+  "min_instances": 0,
+  "max_instances": 2,
+  "resource_limits": {
+    "cpu": "2",
+    "memory": "4Gi"
+  },
+  "environment_variables": {
+    "GOOGLE_CLOUD_LOCATION": "global",
+    "GOOGLE_GENAI_USE_VERTEXAI": "1"
+  },
+  "deployment_notes": "HealthGuard AI requires moderate resources due to multi-agent coordination. Scales to 0 when idle to minimize costs.",
+  "health_check": {
+    "enabled": true,
+    "path": "/health",
+    "interval_seconds": 30
+  }
+}
